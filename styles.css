@@ -1,0 +1,281 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --secondary-background-color: #373636;;
+}
+
+#nav-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    width: 100%;
+}
+
+#nav-upperside {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#nav-lowerside {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: white;
+    padding: 2rem 0;
+}
+
+#nav-lowerside a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+}
+
+#nav-lowerside a:hover {
+    text-shadow: 2px 2px 0.5rem rgb(0, 0, 0);
+}
+
+
+#hero {
+    display: flex;
+    flex-flow: wrap row;
+    overflow: hidden;
+    padding: 0;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    justify-content: start;
+}
+
+#hero-logo {
+    width: 10%;
+    text-align: center;
+    overflow:auto;
+}
+
+
+#hero-leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding: 1rem;
+    flex: 1;
+    background-image: linear-gradient(#A29278, #767373);
+}
+
+#hero-rightside {  
+    flex: 1;
+    line-height: 0;
+}
+
+#hero-h1 {
+    width: 70%;
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0 0 0.1rem rgb(38, 38, 38);
+}
+
+#hero-text {
+    width: 70%;
+    padding: 1rem 1rem;
+    margin: 1.25rem 0;
+    
+}
+
+#hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    
+}
+
+.contact-btn {
+    margin: 0.62rem 1.25rem;
+    background-color: rgb(239, 200, 58);
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 0.93rem 2.5rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+.contact-btn:hover {
+    box-shadow: 0.31rem 0.31rem 0.31rem rgb(79, 78, 78);
+}
+
+.contact-btn:active {
+    opacity: 0.7;
+    background-color: rgb(5, 208, 5);
+    color: white;
+}
+
+#value-proposal {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+    color: white; 
+    background-color: var(--secondary-background-color);
+    background-image: url("./images/circle.png");
+    background-size: 26rem;
+    background-repeat: no-repeat;
+    background-position: 1%;
+    min-height: 50vh;
+}
+
+
+#vp-header {
+    flex: 1;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+#vp-header h2 {
+    padding: 1rem 1rem;
+    font-size: 2.5rem;
+}
+
+#vp-text {
+    flex: 1;
+    font-size: 1.12rem;
+    margin: 0;
+}
+
+#vp-text p {
+    width: 80%;
+    padding: 1rem 2rem;
+}
+
+#vp-lowerside {
+    flex: 1;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 0;
+    background-image: url("./images/meeting2.png");
+    background-size: cover;
+    height: 25rem;
+}
+
+#meet-team-header {
+    text-align: center;
+    padding: 1.8rem 0;
+    flex: 1;    
+    background-color: #A29278;
+    color: black;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#meet-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: linear-gradient(#A29278, #767373);
+}
+
+.profile-title, .title-info {
+    color: black;
+    text-align: center;
+}
+
+.profile-title {
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.title-info {
+    margin: 0;
+}
+
+#contact-section {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    color: white;
+    justify-content: start;
+}
+
+#contact-leftside {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding: 3rem 0;
+    align-items: center;
+    font-size: 2rem;
+    flex: 2;
+    background-color: var(--secondary-background-color);
+    color: white;
+    width: 100%;
+}
+
+#contact-rightside {
+    flex: 1;
+    line-height: 0;
+}
+
+#contact-picture {
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#contact-header {
+    padding: 0.5rem 0;
+}
+
+#contact-leftside p {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 320px) and (max-width: 480px) {
+    #hero, #value-proposal, #meet-team, #contact-section, #nav-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #value-proposal {
+        background-image:none;
+        align-items: flex-start;
+    }
+
+    #nav-lowerside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero-logo {
+        width: 40%;
+    }
+}
